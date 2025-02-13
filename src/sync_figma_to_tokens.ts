@@ -1,8 +1,8 @@
 import 'dotenv/config'
 import * as fs from 'fs'
+import * as path from 'path'
 
 import FigmaApi from './figma_api.js'
-
 import { green } from './utils.js'
 import { tokenFilesFromLocalVariables } from './token_export.js'
 
@@ -34,11 +34,16 @@ async function main() {
   }
 
   if (!fs.existsSync(outputDir)) {
-    fs.mkdirSync(outputDir)
+    fs.mkdirSync(outputDir, { recursive: true })
   }
 
   Object.entries(tokensFiles).forEach(([fileName, fileContent]) => {
-    fs.writeFileSync(`${outputDir}/${fileName}`, JSON.stringify(fileContent, null, 2))
+    const filePath = path.join(outputDir, fileName)
+    const dir = path.dirname(filePath)
+    if (!fs.existsSync(dir)) {
+      fs.mkdirSync(dir, { recursive: true })
+    }
+    fs.writeFileSync(filePath, JSON.stringify(fileContent, null, 2))
     console.log(`Wrote ${fileName}`)
   })
 
