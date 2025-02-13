@@ -1,0 +1,58 @@
+{
+  "Breakpoints": {
+    "$type": "number",
+    "$value": 1440,
+    "$description": "",
+    "$extensions": {
+      "com.figma": {
+        "hiddenFromPublishing": false,
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "codeSyntax": {}
+      }
+    }
+  },
+  "Columns": {
+    "$type": "number",
+    "$value": 12,
+    "$description": "",
+    "$extensions": {
+      "com.figma": {
+        "hiddenFromPublishing": false,
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "codeSyntax": {}
+      }
+    }
+  },
+  "Margins": {
+    "$type": "number",
+    "$value": 128,
+    "$description": "",
+    "$extensions": {
+      "com.figma": {
+        "hiddenFromPublishing": false,
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "codeSyntax": {}
+      }
+    }
+  },
+  "Gutter": {
+    "$type": "number",
+    "$value": 32,
+    "$description": "",
+    "$extensions": {
+      "com.figma": {
+        "hiddenFromPublishing": false,
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "codeSyntax": {}
+      }
+    }
+  }
+}
