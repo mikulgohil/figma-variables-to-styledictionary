@@ -1311,7 +1311,7 @@
     "Default": {
       "Default": {
         "$type": "color",
-        "$value": "{color.grey.500-20%}",
+        "$value": "{color.grey.500-20}",
         "$description": "",
         "$extensions": {
           "com.figma": {
